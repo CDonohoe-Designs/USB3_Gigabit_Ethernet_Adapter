@@ -146,7 +146,7 @@ These may be added later if the project is extended.
 | Area | Status |
 |---|---|
 | Repository structure | Complete |
-| Design requirements | In progress |
+| Design requirements | Complete |
 | Component selection | Not started |
 | Schematic design | Not started |
 | PCB layout | Not started |
