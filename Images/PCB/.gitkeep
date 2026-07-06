@@ -1,0 +1,30 @@
+# Altium generated files
+__Previews/
+History/
+Project Logs*/
+*.PrjPcbStructure
+*.PrjPcbVariants
+*.Dat
+*.log
+*.htm
+*.html
+*.REP
+*.RUL
+*.Drc
+*.DRR
+*.ERR
+*.LDP
+*.PcbDoc.htm
+*.SchDocPreview
+*.PcbDocPreview
+
+# Altium temporary/backup files
+*.~*
+*.backup
+*.Backup
+*.autosave
+*.Autosave
+
+# Windows
+Thumbs.db
+desktop.ini
