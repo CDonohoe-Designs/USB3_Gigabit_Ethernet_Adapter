@@ -85,7 +85,7 @@ The following impedance profiles will be created in:
 
 Primary routing configuration:
 
-```text
+
 Routing layer: L1 Top
 Reference layer: L2 GND
 
