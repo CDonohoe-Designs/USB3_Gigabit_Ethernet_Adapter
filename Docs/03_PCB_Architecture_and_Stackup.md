@@ -85,7 +85,7 @@ The following impedance profiles will be created in:
 
 Primary routing configuration:
 
-```text
+
 Routing layer: L1 Top
 Reference layer: L2 GND
 
@@ -163,15 +163,3 @@ Planned repository evidence:
 - `Images/PCB/03_ETH_100R_Impedance_Profile.png`
 - `Images/PCB/04_Eurocircuits_Buildup.png`
 
-## 12. Current Status
-
-| Item | Status |
-|---|---|
-| Four-layer architecture selected | Complete |
-| Manufacturer baseline selected | Complete |
-| Nominal board thickness selected | Preliminary |
-| Exact manufacturer buildup | Not selected |
-| Altium layer stack entered | Not started |
-| USB impedance profile | Not started |
-| Ethernet impedance profile | Not started |
-| Stack-up evidence captured | Not started |
