@@ -164,6 +164,16 @@ The expansion is measured from the copper-pad edge. Vias are excluded from this 
 
 Fine-pitch footprints may use local solder-mask overrides where necessary to maintain acceptable solder-mask slivers.
 
+## Minimum Solder-Mask Sliver Rule
+
+The solder-mask sliver rule controls the minimum remaining strip of solder mask between adjacent mask openings.
+
+| Rule | Scope | Minimum sliver |
+|---|---|---:|
+| `MIN_SOLDER_MASK_SLIVER` | All solder-mask openings | 0.075 mm |
+
+The value is based on an LDI solder-mask manufacturing process. Fine-pitch components will be reviewed individually during DRC to confirm that the resulting mask geometry is manufacturable.
+
 
 ## 6. Planned Design Rules
 
