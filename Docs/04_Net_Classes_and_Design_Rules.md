@@ -152,6 +152,18 @@ The drilled-hole rule prevents pads and vias from using hole sizes below the sel
 
 The 0.30 mm minimum matches the general routing-via hole size. The maximum value allows for connector and mechanical mounting holes and will be reviewed against the final footprint set.
 
+## Solder-Mask Expansion Rule
+
+A positive solder-mask expansion is applied around component pads to compensate for solder-mask registration tolerances.
+
+| Rule | Scope | Top expansion | Bottom expansion |
+|---|---|---:|---:|
+| `SM_EXPANSION_PADS` | All component pads | 0.075 mm | 0.075 mm |
+
+The expansion is measured from the copper-pad edge. Vias are excluded from this rule and will be handled separately through via-tenting settings.
+
+Fine-pitch footprints may use local solder-mask overrides where necessary to maintain acceptable solder-mask slivers.
+
 
 ## 6. Planned Design Rules
 
