@@ -129,6 +129,18 @@ Altium uses Within Differential Pair Length for matching the two members of each
 | `MATCH_ETH_WITHIN_PAIR`   | `ETH_DIFF`  | Within differential pair |   1.27 mm |
 | `MATCH_ETH_BETWEEN_PAIRS` | `ETH_DIFF`  | Between complete pairs   |  15.24 mm |
 
+## Minimum Annular Ring Rule
+
+The minimum annular ring is controlled to maintain sufficient copper around drilled pads and vias.
+
+| Rule | Scope | Minimum annular ring |
+|---|---|---:|
+| `MIN_ANNULAR_RING` | All pads and vias | 0.15 mm |
+
+The general routing via uses a 0.60 mm diameter and a 0.30 mm hole:
+
+`(0.60 mm − 0.30 mm) / 2 = 0.15 mm`
+
 
 ## 6. Planned Design Rules
 
