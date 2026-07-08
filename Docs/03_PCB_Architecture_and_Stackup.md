@@ -142,17 +142,22 @@ Initial placement principles:
 
 The final board dimensions will be defined after initial component placement.
 
-## 10. Verification
+## 10. ## Implemented Layer Stack
 
-The stack-up will be considered complete when:
+| Layer | Material/type | Thickness | Function |
+|---|---|---:|---|
+| Top solder mask | Solder resist | 0.010 mm | Surface protection |
+| L1 Top | 1 oz copper | 0.035 mm | Components and critical signals |
+| Prepreg | IS400, Dk 4.2 | 0.200 mm | L1-to-L2 dielectric |
+| L2 GND_1 | 1 oz copper | 0.035 mm | Primary reference plane |
+| Core | IS400, Dk 4.4 | 1.010 mm | Central dielectric |
+| L3 GND_2 | 1 oz copper | 0.035 mm | Secondary reference plane |
+| Prepreg | IS400, Dk 4.2 | 0.200 mm | L3-to-L4 dielectric |
+| L4 Bottom | 1 oz copper | 0.035 mm | Power and secondary routing |
+| Bottom solder mask | Solder resist | 0.010 mm | Surface protection |
 
-- The exact Eurocircuits buildup is selected.
-- Copper and dielectric parameters are entered into Altium.
-- The total thickness matches the manufacturer buildup.
-- `USB_90R_DIFF` and `ETH_100R_DIFF` profiles are calculated.
-- Calculated width and gap values are checked against Eurocircuits.
-- The final stack-up screenshot is stored in the repository.
-- PCB design rules reference the corresponding impedance profiles.
+Nominal laminate and copper thickness: 1.55 mm.  
+Approximate finished thickness including solder mask: 1.57 mm.
 
 ## 11. Evidence
 
