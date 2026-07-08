@@ -94,6 +94,20 @@ The differential-pair rule has higher priority than the general board-clearance 
 
 The values are initial routing constraints. Short power connections may use copper regions where this provides a lower-impedance current path.
 
+## Routing Layer Rules
+
+High-speed and clock nets are constrained to the Top Layer so that they reference the adjacent continuous L2 ground plane and avoid unnecessary layer transitions.
+
+| Rule | Net class | Top Layer | Bottom Layer |
+|---|---|---|---|
+| `ROUTE_LAYER_USB3` | `USB3_SS` | Allowed | Not allowed |
+| `ROUTE_LAYER_USB2` | `USB2_HS` | Allowed | Not allowed |
+| `ROUTE_LAYER_ETH` | `ETH_MDI` | Allowed | Not allowed |
+| `ROUTE_LAYER_CLOCK` | `CLOCK_25MHZ` | Allowed | Not allowed |
+| `ROUTE_LAYER_GENERAL` | All remaining nets | Allowed | Allowed |
+
+The high-speed interfaces will be routed primarily on L1 and referenced to the continuous L2 `GND_1` plane.
+
 ## 6. Planned Design Rules
 
 The following PCB rules will be created:
