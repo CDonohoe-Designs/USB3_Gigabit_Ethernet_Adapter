@@ -144,6 +144,7 @@ The final board dimensions will be defined after initial component placement.
 
 ## 10. ## Implemented Layer Stack
 
+
 | Layer | Material/type | Thickness | Function |
 |---|---|---:|---|
 | Top solder mask | Solder resist | 0.010 mm | Surface protection |
@@ -158,6 +159,7 @@ The final board dimensions will be defined after initial component placement.
 
 Nominal laminate and copper thickness: 1.55 mm.  
 Approximate finished thickness including solder mask: 1.57 mm.
+Based on Euro Circuits process
 
 ## 11. Evidence
 
