@@ -70,6 +70,17 @@ The profiles were calculated using the implemented four-layer stack in Altium La
 
 The preferred width and pair gap are derived from the controlled-impedance profiles in Altium Layer Stack Manager.
 
+## Differential-Pair Clearance Rule
+
+A dedicated clearance rule permits the controlled-impedance gap within each differential pair while maintaining a larger clearance to unrelated copper.
+
+| Rule | Application | Minimum clearance | Priority |
+|---|---|---:|---:|
+| `CLEARANCE_SAME_DIFF_PAIR` | Members of the same differential pair | 0.127 mm | 1 |
+| `Clearance_1` | All other electrical objects | 0.254 mm | 2 |
+
+The differential-pair rule has higher priority than the general board-clearance rule.
+
 ## 6. Planned Design Rules
 
 The following PCB rules will be created:
