@@ -108,6 +108,15 @@ High-speed and clock nets are constrained to the Top Layer so that they referenc
 
 The high-speed interfaces will be routed primarily on L1 and referenced to the continuous L2 `GND_1` plane.
 
+## Routing Via Style Rules
+
+| Rule | Scope | Preferred diameter | Preferred hole |
+|---|---|---:|---:|
+| `VIA_POWER` | Power net classes | 0.80 mm | 0.40 mm |
+| `VIA_GENERAL` | All remaining nets | 0.60 mm | 0.30 mm |
+
+The general via provides a 0.15 mm nominal annular ring. Larger power vias are preferred where supply rails change layers. USB, Ethernet and crystal nets are constrained to the Top Layer to avoid unnecessary via transitions.
+
 ## 6. Planned Design Rules
 
 The following PCB rules will be created:
