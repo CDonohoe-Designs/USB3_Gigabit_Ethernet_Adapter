@@ -174,6 +174,20 @@ The solder-mask sliver rule controls the minimum remaining strip of solder mask 
 
 The value is based on an LDI solder-mask manufacturing process. Fine-pitch components will be reviewed individually during DRC to confirm that the resulting mask geometry is manufacturable.
 
+## Silk-to-Solder-Mask Clearance Rule
+
+The silkscreen clearance rule prevents component outlines, reference
+designators and other overlay objects from overlapping exposed pads and
+solder-mask openings.
+
+| Rule | Scope | Check mode | Minimum clearance |
+|---|---|---|---:|
+| `SILK_TO_MASK_CLEARANCE` | All silkscreen objects | Clearance to solder-mask openings | 0.10 mm |
+
+Silkscreen objects will be reviewed after component placement to ensure
+that reference designators remain readable and do not extend over exposed
+copper, holes or solderable pads.
+
 
 ## 6. Planned Design Rules
 
