@@ -157,9 +157,9 @@ Initial placement principles:
 | L4 Bottom | 1 oz copper | 0.035 mm | Power and secondary routing |
 | Bottom solder mask | Solder resist | 0.010 mm | Surface protection |
 
-Nominal laminate and copper thickness: 1.55 mm.  
-Approximate finished thickness including solder mask: 1.57 mm.
-Based on Euro Circuits process
+-Nominal laminate and copper thickness: 1.55 mm.  
+-Approximate finished thickness including solder mask: 1.57 mm.
+-Based on Euro Circuits process
 =======
 
 
