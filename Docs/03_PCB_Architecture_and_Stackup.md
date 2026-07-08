@@ -140,26 +140,8 @@ Initial placement principles:
 - Switching regulators kept away from the crystal and high-speed differential pairs.
 - Decoupling capacitors placed beside their associated supply pins.
 
-The final board dimensions will be defined after initial component placement.
 
-## 10. Verification
 
-The stack-up will be considered complete when:
 
-- The exact Eurocircuits buildup is selected.
-- Copper and dielectric parameters are entered into Altium.
-- The total thickness matches the manufacturer buildup.
-- `USB_90R_DIFF` and `ETH_100R_DIFF` profiles are calculated.
-- Calculated width and gap values are checked against Eurocircuits.
-- The final stack-up screenshot is stored in the repository.
-- PCB design rules reference the corresponding impedance profiles.
 
-## 11. Evidence
-
-Planned repository evidence:
-
-- `Images/PCB/01_Layer_Stack.png`
-- `Images/PCB/02_USB_90R_Impedance_Profile.png`
-- `Images/PCB/03_ETH_100R_Impedance_Profile.png`
-- `Images/PCB/04_Eurocircuits_Buildup.png`
 
