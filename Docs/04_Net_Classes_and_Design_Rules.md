@@ -117,6 +117,17 @@ The high-speed interfaces will be routed primarily on L1 and referenced to the c
 
 The general via provides a 0.15 mm nominal annular ring. Larger power vias are preferred where supply rails change layers. USB, Ethernet and crystal nets are constrained to the Top Layer to avoid unnecessary via transitions.
 
+This checks the overall length difference between MDI_TR0, TR1, TR2 and TR3. Microchip allows a maximum delta of 600 mils or 15.24 mm between the four pairs.
+
+Altium uses Within Differential Pair Length for matching the two members of each pair, and Group Matched Lengths for matching complete differential pairs against one another.
+
+| Rule                      | Scope       | Mode                     | Tolerance |
+| ------------------------- | ----------- | ------------------------ | --------: |
+| `MATCH_USB3_WITHIN_PAIR`  | `USB3_DIFF` | Within differential pair |  0.127 mm |
+| `MATCH_ETH_WITHIN_PAIR`   | `ETH_DIFF`  | Within differential pair |   1.27 mm |
+| `MATCH_ETH_BETWEEN_PAIRS` | `ETH_DIFF`  | Between complete pairs   |  15.24 mm |
+
+
 ## 6. Planned Design Rules
 
 The following PCB rules will be created:
