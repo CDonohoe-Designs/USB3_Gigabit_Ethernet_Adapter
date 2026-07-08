@@ -142,6 +142,17 @@ The general routing via uses a 0.60 mm diameter and a 0.30 mm hole:
 `(0.60 mm − 0.30 mm) / 2 = 0.15 mm`
 
 
+## Drilled-Hole Size Rule
+
+The drilled-hole rule prevents pads and vias from using hole sizes below the selected manufacturing baseline.
+
+| Rule | Scope | Minimum hole | Maximum hole |
+|---|---|---:|---:|
+| `MIN_DRILLED_HOLE` | All pads and vias | 0.30 mm | 6.35 mm |
+
+The 0.30 mm minimum matches the general routing-via hole size. The maximum value allows for connector and mechanical mounting holes and will be reviewed against the final footprint set.
+
+
 ## 6. Planned Design Rules
 
 The following PCB rules will be created:
