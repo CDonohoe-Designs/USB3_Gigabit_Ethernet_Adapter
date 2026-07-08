@@ -108,6 +108,28 @@ High-speed and clock nets are constrained to the Top Layer so that they referenc
 
 The high-speed interfaces will be routed primarily on L1 and referenced to the continuous L2 `GND_1` plane.
 
+## Routing Via Style Rules
+
+| Rule | Scope | Preferred diameter | Preferred hole |
+|---|---|---:|---:|
+| `VIA_POWER` | Power net classes | 0.80 mm | 0.40 mm |
+| `VIA_GENERAL` | All remaining nets | 0.60 mm | 0.30 mm |
+
+The general via provides a 0.15 mm nominal annular ring. Larger power vias are preferred where supply rails change layers. USB, Ethernet and crystal nets are constrained to the Top Layer to avoid unnecessary via transitions.
+
+## Matched-Length Rules
+
+This checks the overall length difference between MDI_TR0, TR1, TR2 and TR3. Microchip allows a maximum delta of 600 mils or 15.24 mm between the four pairs.
+
+Altium uses Within Differential Pair Length for matching the two members of each pair, and Group Matched Lengths for matching complete differential pairs against one another.
+
+| Rule                      | Scope       | Mode                     | Tolerance |
+| ------------------------- | ----------- | ------------------------ | --------: |
+| `MATCH_USB3_WITHIN_PAIR`  | `USB3_DIFF` | Within differential pair |  0.127 mm |
+| `MATCH_ETH_WITHIN_PAIR`   | `ETH_DIFF`  | Within differential pair |   1.27 mm |
+| `MATCH_ETH_BETWEEN_PAIRS` | `ETH_DIFF`  | Between complete pairs   |  15.24 mm |
+
+
 ## 6. Planned Design Rules
 
 The following PCB rules will be created:
