@@ -140,7 +140,7 @@ Initial placement principles:
 - Switching regulators kept away from the crystal and high-speed differential pairs.
 - Decoupling capacitors placed beside their associated supply pins.
 
-The final board dimensions will be defined after initial component placement.
+
 
 ## 10. ## Implemented Layer Stack
 
@@ -160,13 +160,7 @@ The final board dimensions will be defined after initial component placement.
 Nominal laminate and copper thickness: 1.55 mm.  
 Approximate finished thickness including solder mask: 1.57 mm.
 Based on Euro Circuits process
+=======
 
-## 11. Evidence
 
-Planned repository evidence:
-
-- `Images/PCB/01_Layer_Stack.png`
-- `Images/PCB/02_USB_90R_Impedance_Profile.png`
-- `Images/PCB/03_ETH_100R_Impedance_Profile.png`
-- `Images/PCB/04_Eurocircuits_Buildup.png`
 
