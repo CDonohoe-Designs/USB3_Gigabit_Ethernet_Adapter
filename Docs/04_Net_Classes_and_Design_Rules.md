@@ -105,3 +105,25 @@ Crystal rules
 Power rules
 General routing rules
 Global manufacturing rules
+
+## 9. Verification
+
+The rule-definition stage will be complete when:
+
+- All required net classes exist.
+- All differential pairs are recognised.
+- Controlled-impedance profiles are assigned.
+- Rule priorities are reviewed.
+- Online DRC is enabled.
+- Batch DRC reports no unresolved rule-definition errors.
+- Screenshots are stored in the repository.
+
+## 10. Repository Evidence
+
+The following screenshots will be stored in the repository:
+
+- `Images/PCB/02_Impedance_Profiles.png`
+- `Images/PCB/03_Net_Classes.png`
+- `Images/PCB/04_Differential_Pair_Classes.png`
+- `Images/PCB/05_Routing_Rules.png`
+- `Images/PCB/06_Rule_Priorities.png`
