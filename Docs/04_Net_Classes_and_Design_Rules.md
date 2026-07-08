@@ -97,7 +97,7 @@ These values are initial engineering constraints and will be reviewed before man
 
 The intended priority order is:
 
-```text
+
 USB3 differential rules
 USB2 differential rules
 Ethernet differential rules
