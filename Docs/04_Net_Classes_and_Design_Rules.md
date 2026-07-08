@@ -60,6 +60,16 @@ The most-specific applicable rule will be given the highest priority.
 
 The profiles were calculated using the implemented four-layer stack in Altium Layer Stack Manager.
 
+## Differential-Pair Routing Rules
+
+| Rule | Differential-pair class | Impedance profile | Width | Gap |
+|---|---|---|---:|---:|
+| `DP_USB3_D90` | `USB3_DIFF` | `D90` | 0.246 mm | 0.127 mm |
+| `DP_USB2_D90` | `USB2_DIFF` | `D90` | 0.246 mm | 0.127 mm |
+| `DP_ETH_D100` | `ETH_DIFF` | `D100` | 0.184 mm | 0.127 mm |
+
+The preferred width and pair gap are derived from the controlled-impedance profiles in Altium Layer Stack Manager.
+
 ## 6. Planned Design Rules
 
 The following PCB rules will be created:
