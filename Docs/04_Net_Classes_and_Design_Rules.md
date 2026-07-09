@@ -201,6 +201,21 @@ Altium Clearance Rule
 | ----------------------------- | ---------------------------------- | ---------------------------------- | ----------------: |
 | `CLEARANCE_ETH_BETWEEN_PAIRS` | `ETH_DIFF` differential-pair class | `ETH_DIFF` differential-pair class |          0.635 mm |
 
+## USB 3 Spacing from Unrelated Signals
+
+Microchip recommends keeping USB 3 SuperSpeed differential pairs at least five trace widths away from unrelated signals.
+
+The controlled-impedance trace width for the USB 3 differential pairs is: 0.246 mm
+
+Altium Clearance Rule
+
+| Parameter         | Setting                                    |
+| ----------------- | ------------------------------------------ |
+| Rule name         | `CLEARANCE_USB3_TO_OTHER_SIGNALS`          |
+| First object      | Net Class → `USB3_SS`                      |
+| Second object     | Custom Query → `Not InNetClass('USB3_SS')` |
+| Minimum clearance | 1.23 mm                                    |
+
 
 ## Remaining Design Rules
 
@@ -218,21 +233,6 @@ Additional rules will only be introduced where required by:
 
 This avoids introducing unnecessary constraints before the physical layout
 and routing requirements are fully understood.
-
-## USB 3 Spacing from Unrelated Signals
-
-Microchip recommends keeping USB 3 SuperSpeed differential pairs at least five trace widths away from unrelated signals.
-
-The controlled-impedance trace width for the USB 3 differential pairs is: 0.246 mm
-
-# Altium Clearance Rule
-
-| Parameter         | Setting                                    |
-| ----------------- | ------------------------------------------ |
-| Rule name         | `CLEARANCE_USB3_TO_OTHER_SIGNALS`          |
-| First object      | Net Class → `USB3_SS`                      |
-| Second object     | Custom Query → `Not InNetClass('USB3_SS')` |
-| Minimum clearance | 1.23 mm                                    |
 
 
 
