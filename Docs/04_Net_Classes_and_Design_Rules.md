@@ -196,6 +196,12 @@ The controlled-impedance gap within each Ethernet pair is:
 
 0.127 mm
 
+Altium Clearance Rule
+| Rule                          | First object                       | Second object                      | Minimum clearance |
+| ----------------------------- | ---------------------------------- | ---------------------------------- | ----------------: |
+| `CLEARANCE_ETH_BETWEEN_PAIRS` | `ETH_DIFF` differential-pair class | `ETH_DIFF` differential-pair class |          0.635 mm |
+
+
 ## Remaining Design Rules
 
 Rules not specifically documented in this file retain their Altium default
