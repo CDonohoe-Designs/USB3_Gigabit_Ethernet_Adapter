@@ -236,38 +236,6 @@ and routing requirements are fully understood.
 
 
 
-## 6. Planned Design Rules
-
-The following PCB rules will be created:
-
-1. Global electrical clearance
-2. General signal width
-3. USB VBUS width
-4. 3.3 V power width
-5. 2.5 V power width
-6. 1.2 V power width
-7. USB 2.0 differential-pair routing
-8. USB 3.x differential-pair routing
-9. Gigabit Ethernet differential-pair routing
-10. Differential-pair skew limits
-11. Crystal routing constraints
-12. Via size constraints
-13. Solder-mask constraints
-14. Silkscreen clearance
-15. Board-edge clearance
-
-## 7. Initial Manufacturing Baseline
-
-| Constraint | Initial value |
-|---|---:|
-| General minimum clearance | 0.15 mm |
-| General signal width | 0.15 mm |
-| Minimum finished drill | 0.30 mm |
-| Minimum via diameter | 0.60 mm |
-| Minimum annular ring | 0.15 mm |
-| Solder-mask expansion | 0.05 mm |
-
-These values are initial engineering constraints and will be reviewed before manufacturing release.
 
 ## 8. Rule Priority
 
