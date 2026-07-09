@@ -188,6 +188,31 @@ Silkscreen objects will be reviewed after component placement to ensure
 that reference designators remain readable and do not extend over exposed
 copper, holes or solderable pads.
 
+## Ethernet Pair-to-Pair Spacing
+
+Microchip recommends that the spacing between adjacent Ethernet differential pairs is at least five times the spacing used within one pair.
+
+The controlled-impedance gap within each Ethernet pair is:
+
+0.127 mm
+
+## Remaining Design Rules
+
+Rules not specifically documented in this file retain their Altium default
+values during the initial layout.
+
+Additional rules will only be introduced where required by:
+
+- Component placement
+- Footprint geometry
+- Manufacturer capability
+- Signal-integrity constraints
+- DRC results
+- Design-review findings
+
+This avoids introducing unnecessary constraints before the physical layout
+and routing requirements are fully understood.
+
 
 ## 6. Planned Design Rules
 
