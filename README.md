@@ -20,11 +20,11 @@ The project is being developed in Altium Designer as a hardware design and PCB l
 | Area | Status |
 |---|---|
 | Repository structure | Complete |
-| Project requirements | Not started |
-| Component selection | Not started |
-| Schematic design | Not started |
+| Project requirements | Complete |
+| Component selection | Complete |
+| Schematic design |  Complete |
+| Design rules | Complete |
 | PCB layout | Not started |
-| Design rules | Not started |
 | Manufacturing outputs | Not started |
 | Bring-up plan | Not started |
 
