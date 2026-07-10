@@ -32,7 +32,7 @@ The project is being developed in Altium Designer as a hardware design and PCB l
 
 - Microchip LAN7800 USB3.1 Gen 1 to Gigabit Ethernet controller
 
-## Planned Design Sections
+## Design Sections
 
 - USB-C / USB3 interface
 - LAN7800 controller section
