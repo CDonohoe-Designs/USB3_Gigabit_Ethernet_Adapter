@@ -172,3 +172,9 @@ USB3_Gigabit_Ethernet_Adapter/
 ├── PDFs/
 │
 └── README.md
+
+## Project Files
+
+- [View Schematic PDF](Hardware/Altium/LAN7800_USB_Ethernet_RevA/LAN7800_USB_Ethernet_RevA_Schematic.pdf)
+- [View Engineering Documentation](Docs/)
+- [Browse Altium Design Files](Hardware/Altium/LAN7800_USB_Ethernet_RevA/)
